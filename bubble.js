@@ -8,7 +8,7 @@ var result = [];
 var test = [1, 15, 53, 32, 2, 4,35, 54, 2342, 12 ,1, 23, 3, 2, 32, 3223];
 
 function bubbleSort(arr) {
-  console.log(arr);
+  // console.log(arr);
   changes = 0;
 
 
@@ -22,11 +22,11 @@ function bubbleSort(arr) {
     }
   }
 
-  console.log(changes);
+  // console.log(changes);
 
   if (changes == 0) {
     // not sure why it still goes for a while after this is done. Because of other calls to bubbleSort in the queue?
-    console.log('zero!!!!!!1');
+    // console.log('zero!!!!!!1');
     return arr;
   } else {
 
@@ -35,7 +35,7 @@ function bubbleSort(arr) {
   }
 
   result = arr;
-  console.log(arr);
+  // console.log(arr);
   return result;
 }
 

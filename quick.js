@@ -7,9 +7,23 @@ function quickSort(arr) {
   console.log(arr);
   // Base case:
   if (arr.length == 0) {
-    console.log('hi there');
+    // console.log('hi there');
     return arr;
   } else {
+    // innocent until proven guilty:
+    var allSame = true;
+
+    for (var i=0; i < arr.length - 1; i++) {
+      if (arr[i] != arr[i+1]) {
+        allSame = false;
+      }
+    }
+
+    // console.log(allSame);
+    if (allSame) {
+      return arr;
+    }
+
     var less = [];
     var greater = [];
     var ran = Math.floor(Math.random() * arr.length);
@@ -28,8 +42,10 @@ function quickSort(arr) {
 
 
     // I think i read "sort them both using quickSort" too literally: this is just winnowing down to smallest list of all the same and then stalling out. We need to give it some logic.
-    var l = quickSort(less);
     var g = quickSort(greater);
+
+
+    var l = quickSort(less);
 
 
 
@@ -37,8 +53,9 @@ function quickSort(arr) {
 
     console.log('hi');
 
-    return(l.concat([x].concat(g)));
+    return(l.concat(g));
   }
 }
 
-quickSort(array);
+var res = quickSort(array);
+console.log(res);
