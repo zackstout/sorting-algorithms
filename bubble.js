@@ -25,17 +25,21 @@ function bubbleSort(arr) {
   console.log(changes);
 
   if (changes == 0) {
+    // not sure why it still goes for a while after this is done. Because of other calls to bubbleSort in the queue?
     console.log('zero!!!!!!1');
     return arr;
   } else {
+
+    // recurse:
     bubbleSort(arr);
   }
 
   result = arr;
   console.log(arr);
+  return result;
 }
 
-bubbleSort(test);
+var result = bubbleSort(test);
 
 
 // this is false!:
