@@ -26,6 +26,8 @@ function quickSort(arr) {
     });
     // console.log(less, greater);
 
+
+    // I think i read "sort them both using quickSort" too literally: this is just winnowing down to smallest list of all the same and then stalling out. We need to give it some logic.
     var l = quickSort(less);
     var g = quickSort(greater);
 
