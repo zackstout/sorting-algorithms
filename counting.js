@@ -2,6 +2,7 @@
 // create a count array of amount of time each value appears in the list
 // won't work with negative numbers unless we add listener for minimum. just assume min of 0 for now.
 
+// console.log(randomList);
 var list = [1,2,1,4,5,2,1,5,5,0,4,8];
 // will yield C = [1, 3, 2, 0, 2, 3, 0, 0, 1];
 // Then C' = [1, 4, 6, 6, 8, 11, 11, 11, 12];
@@ -37,7 +38,7 @@ function countSort(arr) {
     c[k] = c[k] + c[k-1];
   }
 
-  console.log(c);
+  // console.log(c);
 
   // finally, set values of result array:
   // wait, why do they bother decrementing numbers in c'? Oooh because that tells it what index.
@@ -53,5 +54,7 @@ function countSort(arr) {
   return b.slice(1);
 }
 
-var res = countSort(list);
-console.log(res);
+var start = Date.now();
+var res = countSort(randomList);
+var end = Date.now();
+console.log(res, end - start);

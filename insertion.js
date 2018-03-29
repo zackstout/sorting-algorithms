@@ -1,7 +1,11 @@
 
-// Walk through the list one by one. If the item is *smaller* than its *predecessor*, switch until it's *not* greater than predecsssor.
+// Walk through the list one by one. If the item is *greater* than its *follower*, swap it backwards until it's *smaller* than follower.
 
-var list = [1, 4, 2, 1, 4, 5, 3, 2, 1, 4, 5, 6];
+// Better explanation. Each element asks, am I smaller than my predecessor? If so, move back until this is no longer true.
+// var list = [1, 4, 2, 1, 4, 5, 3, 2, 1, 4, 5, 6, 2, 4, 20, 32, 2, 13, 43, 2, 84, 23];
+
+// ok it *does* work, it's just we forgot the reference to the global array from swapWithPred.
+var list = randomList;
 
 function insertionSort(arr) {
   arr.forEach(function(x, i) {
@@ -17,11 +21,6 @@ function insertionSort(arr) {
   return arr;
 }
 
-// function swapWithPred()
-
-var result = insertionSort(list);
-console.log(result);
-
 function swapWithPred(i) {
   // first example of larger is 4, since 4 > 2:
   var larger = list[i];
@@ -32,3 +31,11 @@ function swapWithPred(i) {
     swapWithPred(i - 1);
   }
 }
+
+// var result = insertionSort(randomList);
+// console.log(result);
+
+var start = Date.now();
+var res = insertionSort(randomList);
+var end = Date.now();
+console.log(res, end - start);

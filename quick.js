@@ -4,7 +4,7 @@ console.log('quick!');
 var array = [1, 2, 4, 2, 1, 4, 5, 6, 2, 32, 12, 12, 1 , 32, 24];
 
 function quickSort(arr) {
-  console.log(arr);
+  // console.log(arr);
   // Base case:
   if (arr.length == 0) {
     // console.log('hi there');
@@ -51,11 +51,16 @@ function quickSort(arr) {
 
     // console.log(less, greater);
 
-    console.log('hi');
+    // console.log('hi');
 
     return(l.concat(g));
   }
 }
 
-var res = quickSort(array);
-console.log(res);
+// var res = quickSort(array);
+// console.log(res);
+
+var start = Date.now();
+var res = quickSort(randomList);
+var end = Date.now();
+console.log(res, end - start);

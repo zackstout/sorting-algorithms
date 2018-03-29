@@ -49,8 +49,11 @@ var result = bubbleSort(test);
 
 
 
-
-console.log(result);
+var start = Date.now();
+var res = bubbleSort(randomList);
+var end = Date.now();
+console.log(res, end - start);
+// console.log(result);
 
 
 
