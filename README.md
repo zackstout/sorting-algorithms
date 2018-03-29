@@ -5,5 +5,5 @@ Getting some computer science practice by exploring sorting algorithms.
 - [x] Insertion sort
 - [x] Quick sort
 - [ ] Merge sort
-- [ ] Counting sort
+- [x] Counting sort
 - [ ] Heap sort
