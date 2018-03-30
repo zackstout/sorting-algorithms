@@ -13,8 +13,10 @@ Number of milliseconds it takes (on average, roughly) to run each algorithm on a
 
 Name | Type | 10,000 | 100,000 | 1,000,000
 --- | --- | --- | --- | ---
-Bubble | *O(n<sup>2</sup>)* | 650 | (breaks) | (breaks)
+Bubble | *O(n<sup>2</sup>)* | 650 | - | -
 Counting | *O(n + k)* | 10 | 40 | 150
-Insertion | *O(n<sup>2</sup>)* | 850 | (breaks) | (breaks)
+Insertion | *O(n<sup>2</sup>)* | 850 | - | -
 Quick | *O(n * log(n))* | 30 | 80 | 450
-Merge | *O(n * log(n))* | 70 | 450 | (breaks)
+Merge | *O(n * log(n))* | 70 | 450 | -
+
+(Note: '-' indicates that the browser crashes and the algorithm fails.)
