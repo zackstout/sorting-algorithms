@@ -9,7 +9,7 @@ Getting some computer science practice by exploring sorting algorithms.
 - [ ] Heap sort
 
 ## Testing
-Number of milliseconds it takes (on average, roughly) to run each algorithm on an array of length 10,000 and 100,000:
+Number of milliseconds it takes (on average, roughly) to run each algorithm on arrays of length 10,000, 100,000 and 1,000,000:
 
 Name | Type | 10,000 | 100,000 | 1,000,000
 --- | --- | --- | --- | ---
