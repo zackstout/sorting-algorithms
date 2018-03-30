@@ -7,6 +7,9 @@ Getting some computer science practice by exploring sorting algorithms.
 - [x] Merge sort
 - [x] Counting sort
 - [ ] Heap sort
+- [ ] Shell sort
+- [ ] Radix sort
+- [ ] Bucket sort
 
 ## Testing
 Number of milliseconds it takes (on average, roughly) to run each algorithm on arrays of length 10,000, 100,000 and 1,000,000:
