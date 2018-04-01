@@ -105,15 +105,20 @@ function passOver(arr, level) {
 
 // all done, except for removing leading zeros:
 
+
+
+var randomList = [];
+
+for (var i=0; i < 10000; i++) {
+  randomList.push(Math.floor(Math.random() * 2000));
+}
 var start = Date.now();
 var res = radixSort(randomList);
 var end = Date.now();
 console.log(res);
 console.log(start - end);
 
-
-
-
+// console.log(radixSort(randomList));
 
 
 

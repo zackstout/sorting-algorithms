@@ -21,6 +21,6 @@ Counting | *O(n + k)* | 10 | 40 | 150
 Insertion | *O(n<sup>2</sup>)* | 850 | - | -
 Quick | *O(n * log(n))* | 30 | 80 | 450
 Merge | *O(n * log(n))* | 70 | 450 | -
-Radix | *O(w * n)* | 40 | 190 | -
+Radix | *O(w * n)* | 40 (20) | 190 (210) | -
 
 (Note: '-' indicates that the browser crashes and the algorithm fails.)
