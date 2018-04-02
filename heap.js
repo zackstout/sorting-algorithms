@@ -1,9 +1,8 @@
 
-
 // Let's really build maxHeap:
+// OK not using this but keeping for educational purposes:
 function maxifyHeap(arr) {
   console.log(arr);
-
 
   // Ex: arr = [1, 5, 3, 2, 1, 3, 3, 2, 1, 3].
   // 1 element fills first level (index 0)
@@ -53,23 +52,10 @@ function maxifyHeap(arr) {
   // arr2.splice(1, 1, parent);
 
   // console.log(arr2);
-
-
-
-
-
-}
-
-function swapWithParent(arr, i) {
-  
 }
 
 
-// var res = max_heapify([1,2,3,2,2,1,4,2,1], 9, 3);
-// console.log(res);
 
-// var x = maxifyHeap([1, 3, 2, 1, 3, 2, 3, 3, 4, 2,1 , 3]);
-// console.log(isMax(maxifyHeap(x)));
 
 function isMax(arr) {
   res = true;
@@ -79,12 +65,11 @@ function isMax(arr) {
       res = false;
     }
   }
-
   return res;
 }
 
 function recurseMax(arr) {
-  console.log(isMax(arr));
+  // console.log(isMax(arr));
   if (isMax(arr)) {
     return arr;
   } else {
@@ -107,12 +92,32 @@ function recurseMax(arr) {
         arr.splice(2*i + 2, 1, parent);
         
       }
-  
-      // console.log(i, arr);
-      
     }
     return (recurseMax(arr));
   }
 }
 
 console.log(recurseMax([1, 3, 2, 1, 3, 2, 3, 3, 4, 2, 1, 3]));
+
+function heapSort(arr) {
+  var ourHeap = arr;
+  var res = [];
+  while (ourHeap.length > 1) {
+    var maxHeap = recurseMax(ourHeap);
+    var last = maxHeap[maxHeap.length - 1];
+    var first = maxHeap[0];
+    // put max element at beginning of our sorted array:
+    res.unshift(first);
+    // remove the last element:
+    maxHeap.pop();
+    // and add it to the beginning:
+    maxHeap.splice(0, 1, last); // i think we could just pass in maxHeap.pop() instead of last.
+    ourHeap = maxHeap;
+  }
+  return res;
+}
+
+var start = Date.now();
+var x = heapSort(randomList);
+var end = Date.now();
+console.log(x, end - start);
