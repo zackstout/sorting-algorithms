@@ -1,5 +1,5 @@
 # Sorting Algorithms
-Getting some computer science practice by exploring sorting algorithms.
+Getting some computer science practice by implementing sorting algorithms.
 
 - [x] Bubble sort
 - [x] Insertion sort
@@ -21,6 +21,6 @@ Counting | *O(n + k)* | 10 | 40 | 150
 Insertion | *O(n<sup>2</sup>)* | 850 | - | -
 Quick | *O(n * log(n))* | 30 | 80 | 450
 Merge | *O(n * log(n))* | 70 | 450 | -
-Radix | *O(w * n)* | 40 (20) | 190 (210) | -
+Radix | *O(w * n)* | 40 | 190 | -
 
 (Note: '-' indicates that the browser crashes and the algorithm fails.)
