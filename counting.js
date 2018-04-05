@@ -7,6 +7,16 @@ var list = [1,2,1,4,5,2,1,5,5,0,4,8];
 // will yield C = [1, 3, 2, 0, 2, 3, 0, 0, 1];
 // Then C' = [1, 4, 6, 6, 8, 11, 11, 11, 12];
 
+
+// for our p5 drawing:
+var range = 160;
+var maxVal = 300;
+var newList = [];
+
+for (var i=0; i < range; i++) {
+  newList.push(Math.floor(Math.random() * maxVal));
+}
+
 function countSort(arr) {
   // will be our sorted result:
   var b = new Array(arr.length);
@@ -54,7 +64,8 @@ function countSort(arr) {
   return b.slice(1);
 }
 
-var start = Date.now();
-var res = countSort(randomList);
-var end = Date.now();
-console.log(res, end - start);
+// var start = Date.now();
+// var res = countSort(randomList);
+// var end = Date.now();
+var x = countSort(newList);
+console.log(x);
