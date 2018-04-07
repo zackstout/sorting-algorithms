@@ -2,6 +2,14 @@
 console.log('quick!');
 
 var array = [1, 2, 4, 2, 1, 4, 5, 6, 2, 32, 12, 12, 1 , 32, 24];
+var range = 160;
+var maxVal = 300;
+var newList = [];
+
+for (var i=0; i < range; i++) {
+  newList.push(Math.floor(Math.random() * maxVal));
+}
+
 
 function quickSort(arr) {
   // console.log(arr);
@@ -40,6 +48,7 @@ function quickSort(arr) {
     });
     // console.log(less, greater);
 
+    console.log(less, greater);
 
     // I think i read "sort them both using quickSort" too literally: this is just winnowing down to smallest list of all the same and then stalling out. We need to give it some logic.
     var g = quickSort(greater);
@@ -61,6 +70,6 @@ function quickSort(arr) {
 // console.log(res);
 
 var start = Date.now();
-var res = quickSort(randomList);
+var res = quickSort(array);
 var end = Date.now();
 console.log(res, end - start);

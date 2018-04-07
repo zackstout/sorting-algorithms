@@ -2,6 +2,17 @@
 // Loop through list. Check whether list[i] > list[i + 1]. If so swap. Either way, move on to next element.
 // Then loop through list again. Go until no changes need to be made.
 
+// for our p5 drawing:
+var range = 160;
+var maxVal = 300;
+var newList = [];
+
+// This doesn't make much sense: the list should be chosen in the index or draw.js.:
+for (var i=0; i < range; i++) {
+  newList.push(Math.floor(Math.random() * maxVal));
+}
+
+
 var changes = 0;
 var result = [];
 
@@ -31,7 +42,11 @@ function bubbleSort(arr) {
   } else {
 
     // recurse:
-    bubbleSort(arr);
+    // setInterval(bubbleSort(arr), 1000);
+    // setTimeout(bubbleSort(arr), 100);
+    // Oh prob because we can't pass in a parameter.
+    // bubbleOurs();
+    setTimeout(bubbleOurs, 10);
   }
 
   result = arr;
@@ -45,12 +60,14 @@ var result = bubbleSort(test);
 // this is false!:
 // console.log([1, 2] == [1, 2]);
 
-
+function bubbleOurs() {
+  bubbleSort(newList);
+}
 
 
 
 var start = Date.now();
-var res = bubbleSort(randomList);
+var res = bubbleSort(newList);
 var end = Date.now();
 console.log(res, end - start);
 // console.log(result);

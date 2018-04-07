@@ -5,9 +5,9 @@ function setup() {
   // Great, this can access variable from counting.js:
   // console.log(x);
   var wid = width / range;
-  console.log(wid);
+  // console.log(wid);
   var base = height - 10;
-  console.log(newList);
+  // console.log(newList);
 
   for (var i=0; i < range; i++) {
     line(i*wid, base, i*wid, base - newList[i]);
@@ -15,5 +15,13 @@ function setup() {
 }
 
 function draw() {
+  background(229);
+  var wid = width / range;
+  // console.log(wid);
+  var base = height - 10;
+  // console.log(newList);
 
+  for (var i=0; i < range; i++) {
+    line(i*wid, base, i*wid, base - newList[i]);
+  }
 }

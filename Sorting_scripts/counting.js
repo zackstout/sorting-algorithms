@@ -13,6 +13,7 @@ var range = 160;
 var maxVal = 300;
 var newList = [];
 
+// This doesn't make much sense: the list should be chosen in the index or draw.js.:
 for (var i=0; i < range; i++) {
   newList.push(Math.floor(Math.random() * maxVal));
 }
