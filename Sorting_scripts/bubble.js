@@ -46,7 +46,7 @@ function bubbleSort(arr) {
     // setTimeout(bubbleSort(arr), 100);
     // Oh prob because we can't pass in a parameter.
     // bubbleOurs();
-    setTimeout(bubbleOurs, 10);
+    setTimeout(bubbleOurs, 100);
   }
 
   result = arr;

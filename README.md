@@ -26,3 +26,7 @@ Heap | *O(n * log(n))* | 6500 | - | -
 
 (Note: '-' indicates that the browser crashes and the algorithm fails.)
 (Note: There's a *slight* chance I coded heap sort very inefficiently.)
+
+## Animation
+Bubble sort:
+<img src="https://media.giphy.com/media/4N958dvCfVHiCSaHKG/giphy.gif" width="680px">
