@@ -11,6 +11,9 @@ for (var i=0; i < range; i++) {
 }
 
 
+// A very nice, simple example of recursion:
+
+
 function quickSort(arr) {
   // console.log(arr);
   // Base case:

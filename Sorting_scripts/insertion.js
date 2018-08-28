@@ -21,6 +21,8 @@ function insertionSort(arr) {
   return arr;
 }
 
+// Aha, yet more recursion!:
+
 function swapWithPred(i) {
   // first example of larger is 4, since 4 > 2:
   var larger = list[i];

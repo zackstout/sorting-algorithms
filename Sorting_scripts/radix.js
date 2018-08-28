@@ -38,6 +38,7 @@ function radixSort(arr) {
 
   for (var j=1; j <= maxLen; j++) {
     if (j == 1) {
+      // Huh....seems redundant:
       currentSort = passOver(cleanArr, 1);
       nextSort = passOver(cleanArr, 1);
     } else {
@@ -75,7 +76,7 @@ function passOver(arr, level) {
   var res = [];
 
   arr.forEach(function(el) {
-    var char = el.charAt(el.length - level);
+    var char = el.charAt(el.length - level); // so if level is 1, we get last element of the `el` string
     var ind = parseInt(char);
     // console.log(ind);
     // console.log(buckets[3]);
@@ -87,7 +88,7 @@ function passOver(arr, level) {
   buckets.forEach(function(b) {
     while (b.length > 0) {
       var num = b.shift();
-      res.push(num);
+      res.push(num); // Huh, so we have a flat output...
     }
   });
 

@@ -51,14 +51,19 @@ function countSort(arr) {
 
   // console.log(c);
 
+  // So if input is [1, 4, 2, 0, 3, 4, 2, 1],
+  // count array would be [1, 2, 2, 1, 2]
+  // modified count array would be [1, 3, 5, 6, 8], i.e. the index where each new digit will start repeating
+
   // finally, set values of result array:
   // wait, why do they bother decrementing numbers in c'? Oooh because that tells it what index.
   for (var m = arr.length - 1; m >= 0; m--) {
     // console.log(arr[m]);
-    var val = c[arr[m]];
+    var el = arr[m];
+    var val = c[el];
     // console.log(val);
-    b[val] = arr[m];
-    c[arr[m]] --;
+    b[val] = el;
+    c[el] --;
   }
 
   // hmm, not sure where that first 'empty' is coming from:

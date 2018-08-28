@@ -1,6 +1,8 @@
 
 var list = [1,2,1,4,5,2,1,5,5,0,4,8];
 
+// Another nice example of recursion:
+
 // takes two sorted lists and returns a sorted merge of them:
 function merge(arr1, arr2) {
   var result = [];

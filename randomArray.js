@@ -6,3 +6,7 @@ for (var i=0; i < 10000; i++) {
 }
 
 // console.log(randomList);
+
+module.exports = {
+  list: randomList
+};

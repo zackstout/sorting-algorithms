@@ -1,0 +1,35 @@
+{
+  "name": "sorting-algorithms",
+  "version": "1.0.0",
+  "description": "Getting some computer science practice by implementing sorting algorithms.",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zackstout/sorting-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/zackstout/sorting-algorithms/issues"
+  },
+  "homepage": "https://github.com/zackstout/sorting-algorithms#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
